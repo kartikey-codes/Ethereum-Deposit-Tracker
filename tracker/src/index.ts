@@ -4,11 +4,12 @@ import { doMigration } from './migrate';
 import { startTrackingDeposits } from './tracker';
 import { db } from './db';
 import { deposits } from './schema';
+import cors from 'cors';
 
 const logger = new Logger();
 const app = express();
 const PORT = 3000;
-
+app.use(cors());
 async function main() {
   try {
     logger.info('Executing migrations');
