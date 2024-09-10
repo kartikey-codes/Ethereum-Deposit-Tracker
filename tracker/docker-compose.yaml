@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      POSTGRES_DB: luganodes
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - g-net
+    ports:
+      - '5432:5432'
+
+  tracker:
+    build:
+      context: .
+    container_name: eth-deposit-tracker
+    environment:
+      - DATABASE_URL=postgresql://admin:admin@postgres:5432/luganodes
+      - ALCHEMY_API_KEY=${ALCHEMY_API_KEY}
+    depends_on:
+      - postgres
+    networks:
+      - g-net
+    ports:
+      - '3000:3000'  # Expose API for tracker
+
+volumes:
+  postgres-data:
+
+networks:
+  g-net:
+    external: true

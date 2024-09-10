@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: .
+    container_name: luganodes-frontend
+    ports:
+      - '3002:80'  # Expose the frontend on port 3002
+    networks:
+      - g-net
+
+networks:
+  g-net:
+    external: true
