@@ -9,7 +9,15 @@ Develop a robust and efficient Ethereum Deposit Tracker to monitor and record ET
 git clone https://github.com/kartikey-codes/kartikey_luganodes_task.git
 cd kartikey_luganodes_task
 ```
-
+## Create and configure the .env file
+- navigate to the tracker folder
+- create a .env file
+- paste the below code
+  
+```
+DATABASE_URL=postgresql://admin:admin@localhost:5432/luganodes
+ALCHEMY_API_KEY=<Your_Alchemy_API_Key
+```
 ## Create a Docker network
 
 ```
