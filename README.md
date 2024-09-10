@@ -30,6 +30,8 @@ Start Frontend
 docker-compose up --build
 
 ```
+![image](https://github.com/user-attachments/assets/aa16de7b-e4a8-4043-bca2-3d1263a75a27)
+
 
 ## Run the monitor (for alerts with Grafana)
 
