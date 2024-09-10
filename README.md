@@ -38,8 +38,6 @@ Start Frontend
 docker-compose up --build
 
 ```
-![image](https://github.com/user-attachments/assets/aa16de7b-e4a8-4043-bca2-3d1263a75a27)
-
 
 ## Run the monitor (for alerts with Grafana)
 
@@ -73,6 +71,9 @@ Enter `http://localhost:3000/deposits`
 
 ## Access Frontend
 Enter `http://localhost:3002`
+
+![image](https://github.com/user-attachments/assets/aa16de7b-e4a8-4043-bca2-3d1263a75a27)
+
 
 ## Create dashboard for seeing deposit table
 
