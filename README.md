@@ -1,14 +1,8 @@
-# Luganodes-SDE-Task-Kartikey_Luganodes_Task
+# Ethereum Deposit Tracker
 Develop a robust and efficient Ethereum Deposit Tracker to monitor and record ETH deposits on the Beacon Deposit Contract.
-
-## 21BCT0245-Kartikey Bhatnagar
 
 ## Clone the repository
 
-```
-git clone https://github.com/kartikey-codes/kartikey_luganodes_task.git
-cd kartikey_luganodes_task
-```
 ## Create and configure the .env file
 - navigate to the tracker folder
 - create a .env file
